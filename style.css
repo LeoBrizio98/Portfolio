@@ -1,0 +1,23 @@
+html {
+	font-size: 62.5%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 130rem;
+}
+
+/* ********************** */
+/*         HEADER		  */
+/* ********************** */
