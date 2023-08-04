@@ -13,44 +13,51 @@
 	<link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="container-navbar container">
-		<nav class="menu-navbar">
-			<ul class="menu">
-				<li><a href="#main">Inicio</a></li>
-				<li><a href="#">Sobre mí</a></li>
-				<li><a href="#">Portafolio</a></li>
-				<li><a href="#">Educación</a></li>
-				<li><a href="#">Habilidades</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-		</nav>
-	</div>
-	<div class="container-index container" id="main">
-		<div class="container-profile">
-			<img src="">
-			<p>Leonel Brizio</p>
+	<div class="container-header">
+		<div class="header-title">
+			<h2>Leonel Brizio</h2>
 		</div>
-		<div class="container-comentary">
-			<div>
-				<h2>FullStack Developer en desarrollo</h2>
-				<h3>Bienvenidos a mi portafolio de Desarrollo Junior</h3>
-			</div>
-			<div class="container-download">
-				<button class="download-button">Descarga mi CV</button>
-			</div>
-			<div class="container-links">
-				<nav class="navbar-links">
-					<ul class="menu-links">
-						<li><a href="#">GitHub</a></li>
-						<li><a href="#">Linkedin</a></li>
-						<li><a href="#">Computrabajo</a></li>
-						<li><a href="#">Facebook</a></li>
-					</ul>	
-				</nav>
-			</div>
+		<div class="container-navbar container">
+			<nav class="menu-navbar">
+				<ul class="menu">
+					<li><a href="#main">Inicio</a></li>
+					<li><a href="#">Sobre mí</a></li>
+					<li><a href="#">Portafolio</a></li>
+					<li><a href="#">Educación</a></li>
+					<li><a href="#">Habilidades</a></li>
+					<li><a href="#contact">Contacto</a></li>
+				</ul>
+			</nav>
 		</div>
 	</div>
-	<div class="container-aboutme">
+	<div class="background-index">
+		<div class="container-index container" id="main">
+			<div class="container-profile">
+				<p class="profile-name">Leonel Brizio</p>
+				<img class="img-profile" src="https://img.freepik.com/fotos-premium/oficinista-hombre-sonriente-moderno-que-trabaja-computadora-portatil_1429-8238.jpg?w=2000">
+			</div>
+			<div class="container-comentary">
+				<div class="welcome-msg">
+					<h2 class="welcome-title">FullStack Developer en desarrollo</h2>
+					<h3 class="welcome-title">Bienvenidos a mi portafolio de Desarrollo Junior</h3>
+				</div>
+				<div class="container-download">
+					<button class="download-button">Descarga mi CV</button>
+				</div>
+				<div class="container-links">
+					<nav class="navbar-links">
+						<ul class="menu-links">
+							<li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+							<li><a href="#">Computrabajo</a></li>
+							<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+						</ul>	
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-aboutme container">
 		<div class="aboutme-title">
 			<h2 class="title-section">Sobre mí</h2>
 		</div>
@@ -69,12 +76,12 @@
 			</p>
 		</div>
 	</div>
-	<div>
+	<div class="container-portfolio container">
 		<div>
 			<h2 class="title-section">Portafolio</h2>
 		</div>
 	</div>
-	<div>
+	<div class="container-study container">
 		<div>
 			<h2 class="title-section">Estudios</h2>
 		</div>
@@ -109,7 +116,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="skills">
+	<div class="container-skills container" id="skills">
 		<div>
 			<h2 class="title-section">Habilidades</h2>
 		</div>
@@ -137,7 +144,7 @@
 			</div>
 		</div>
 	</div>
-	<div>
+	<div class="container-contact container" id="contact">
 		<div>
 			<h2 class="title-section">Contacto</h2>
 		</div>
