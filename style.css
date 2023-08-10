@@ -186,7 +186,7 @@ html {
 .container-aboutme {
 	display: flex;
 	flex-direction: column;
-	gap: 5rem;
+	gap: 4rem;
 	padding: 3rem;
 }
 
@@ -197,6 +197,12 @@ html {
 	color: var(--color-blue);	
 }
 
+.aboutme-paragraph {
+	font-size: 1.5rem;
+	padding: 0 20rem;
+	color: #000;
+
+}
 
 
 
@@ -204,8 +210,64 @@ html {
 
 
 
+/* ********************** */
+/*         SKILLS		  */
+/* ********************** */
+
+.container-skills {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+.container-languages {
+	display: flex;
+	justify-content: center;
+	padding: 0 30rem;
+	gap: 5rem;
+	align-items: center;
+}
+
+.program-language {
+	padding: 1rem 3rem;
+	border-bottom: 3px solid #ddd;
+	border-right: 3px solid #ddd;
+	font-size: 1.8rem;
+	color: #000;
+	font-weight: 800;
+	border-radius: 2rem;
+	background-color: #fdfdfd;
+}
 
 
 
 
+
+
+/* ********************** */
+/*         FOOTER		  */
+/* ********************** */
+
+.container-footer {
+	display: flex;
+	background-color: #242423;
+	color: #fff;
+	height: 18rem;
+	flex-direction: column;
+	gap: 3rem ;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-makes {
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.container-makes {
+	background-color: #ccc;
+}
 
