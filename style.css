@@ -91,10 +91,18 @@ html {
 	background-color: var(--background-color);
 }
 
+.my-name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 3rem;
+}
+
 .container-profile {
 	display: flex;
 	flex-direction: column;
 	padding: 5rem;
+	padding-top: 1rem;
 	padding-left: 8rem;
 	padding-right: 3rem;
 	gap: 2rem;
@@ -111,6 +119,7 @@ html {
 	font-size: 3rem;
 	font-weight: 700;
 	padding-top: -1rem;
+	text-transform: uppercase;
 }
 
 .container-comentary {
@@ -120,7 +129,6 @@ html {
 	gap: 5rem;
 	justify-content: center;
 	align-items: left;
-
 }
 
 .welcome-msg {
@@ -169,14 +177,12 @@ html {
 	padding: 1.2rem 1.5rem;
 	color: var(--dark-blue);
 	border-radius: 3rem;
-	border: 3px solid transparent;
 	transition: all .4s ease;
 }
 
 .menu-links a:hover {
 	background-color: var(--dark-blue);
-	color: #fff;
-	border: 3px solid #fff;
+	color: #fff;	
 }
 
 /* ********************** */
@@ -207,6 +213,37 @@ html {
 
 
 
+/* ********************** */
+/*         STUDY		  */
+/* ********************** */
+
+.container-study {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-study-items {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 5rem;
+}
+
+.title-study {
+	display: flex;
+	align-items: center;
+}
+
+
+.name-college {
+	font-size: 1.8rem;
+	color: #000;
+	font-weight: 700;
+}
+
+
+
+
+
 
 
 
@@ -218,6 +255,7 @@ html {
 	display: flex;
 	flex-direction: column;
 	gap: 4rem;
+	padding: 3rem;
 }
 
 .container-languages {
@@ -239,8 +277,48 @@ html {
 	background-color: #fdfdfd;
 }
 
+/* ********************** */
+/*        CONTACT		  */
+/* ********************** */
 
+.container-contact {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 3rem;
+}
 
+.contact-navbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-contact {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	font-size: 1.5rem;
+	padding: .7rem 0;
+}
+
+.menu-contact li {
+	list-style: none;
+}
+
+.menu-contact i{
+	background-color: #ddd;
+}
+
+.menu-contact span{
+	padding: 0 .7rem;
+}
+
+.menu-contact a {
+	text-decoration: none;
+	color: #000;
+	padding: .7rem;
+}
 
 
 
@@ -268,6 +346,7 @@ html {
 }
 
 .container-makes {
+	padding: .3rem 1rem;
 	background-color: #ccc;
 }
 
