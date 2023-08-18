@@ -1,13 +1,14 @@
 html {
 	font-size: 62.5%;
 	font-family: 'Montserrat', sans-serif;
+	background-color: var(--background-color);
 }
 
 :root {
 	--navbar-color: #F17F29;
 	--hover-color: #A8DCD1;
 	--primary-color: #65DEF1;
-	--background-color: #DCE2C8;
+	--background-color: #EBEBEB;
 	--dark-orange: #F96900;
 	--dark-blue: #0B132B;
 	--light-blue: #7FDEDC;
@@ -79,10 +80,6 @@ html {
 /* ********************** */
 /*         INDEX		  */
 /* ********************** */
-
-.background-index {
-	background-color: var(--background-color);
-}
 
 .container-index {
 	display: grid;
@@ -210,8 +207,67 @@ html {
 
 }
 
+.aboutme-featured {
+	text-transform: uppercase;
+	padding: 1.3rem 23rem;
+	font-size: 1.5rem;
+}
 
+/* ********************** */
+/*        PORTFOLIO		  */
+/* ********************** */
 
+.container-portfolio {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 5rem;
+}
+
+.container-gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem;
+	padding: 5rem 0;
+}
+
+.gallery-items {
+	display: flex;
+	flex-direction: column;
+	height: 25rem;
+	padding: .8rem;
+	gap: 1rem;
+	
+}
+
+.gallery-items img {
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 1rem;
+	cursor: pointer;
+}
+
+.links-gallery {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	font-size: 2rem;
+}
+
+.links-gallery i {
+	color: var(--dark-blue);
+	cursor: pointer;
+}
+
+.gallery-items img:hover {
+	color: #ccc;
+	opacity: .7;
+}
+
+.links-gallery i:hover{
+	color: var(--light-blue);
+}
 
 /* ********************** */
 /*         STUDY		  */
@@ -220,12 +276,14 @@ html {
 .container-study {
 	display: flex;
 	flex-direction: column;
+	padding: 2rem 5rem;
 }
 
 .container-study-items {
 	display: flex;
 	flex-direction: column;
-	padding: 1rem 5rem;
+	padding: 4rem 5rem;
+	padding-bottom: 2rem;
 }
 
 .title-study {
@@ -255,21 +313,26 @@ html {
 	display: flex;
 	flex-direction: column;
 	gap: 4rem;
-	padding: 3rem;
+	padding: 2rem 5rem;
 }
 
 .container-languages {
 	display: flex;
 	justify-content: center;
-	padding: 0 30rem;
-	gap: 5rem;
+	padding: 3rem 22rem;
+	gap: 4rem;
+	flex-wrap: wrap;
 	align-items: center;
 }
 
 .program-language {
+	display: flex;
+	min-width: 15rem;
+	align-items: center;
+	justify-content: center;
 	padding: 1rem 3rem;
-	border-bottom: 3px solid #ddd;
-	border-right: 3px solid #ddd;
+	border-bottom: 3px solid #c9c9c9;
+	border-right: 3px solid #c9c9c9;
 	font-size: 1.8rem;
 	color: #000;
 	font-weight: 800;
@@ -285,7 +348,12 @@ html {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
-	padding: 3rem;
+	padding: 2rem 5rem;
+}
+
+.contact-with-me {
+	padding: 5rem 20rem 0;
+	font-size: 1.8rem;
 }
 
 .contact-navbar {
@@ -299,7 +367,7 @@ html {
 	flex-direction: column;
 	gap: 2rem;
 	font-size: 1.5rem;
-	padding: .7rem 0;
+	padding: .7rem 0.5rem;
 }
 
 .menu-contact li {
@@ -318,9 +386,34 @@ html {
 	text-decoration: none;
 	color: #000;
 	padding: .7rem;
+	font-weight: 700;
 }
 
+.menu-contact a:hover {
+	color: #555;
+}
 
+.contain-contact {
+	padding: 1.5rem;
+	border-radius: 1rem;
+	background-color: #ddd;
+}
+
+.email {
+	color: #f00;
+}
+
+.whatsapp {
+	color: #25D366;
+}
+
+.linkedin {
+	color: #0E76A8;
+}
+
+.discord {
+	color: #7289DA;
+}
 
 /* ********************** */
 /*         FOOTER		  */
