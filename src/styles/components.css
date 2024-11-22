@@ -45,7 +45,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--light-brown);
+    background-color: var(--blue-color);
     z-index: 1010;
     display: grid;
     place-content: center;
@@ -71,7 +71,7 @@
     height: 112px;
     border-radius: 50%;
     border: 3px solid var(--white);
-    border-block-start-color: var(--brown-color);
+    border-block-start-color: var(--blue-color-5);
     margin-block-end: 45px;
     animation: rotate360 1s linear infinite;
 }

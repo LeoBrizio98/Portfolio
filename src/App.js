@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './i18n';
 import Error404 from './containers/errors/Error404';
 // Static Pages
 import Home from './containers/pages/Home';

@@ -3,6 +3,16 @@ import { NavLink, Link } from 'react-router-dom';
 import { Fragment, useState } from 'react';
 //Styles
 import '../../styles/navigation.css';
+import {
+	FaPhoneAlt,
+	FaFacebook,
+	FaInstagram,
+	FaPinterest,
+	FaLinkedin,
+	FaYoutube,
+	FaRegEnvelope,
+	FaGithub	 
+} from "react-icons/fa";
 
 
 function Navbar() {
@@ -30,6 +40,26 @@ function Navbar() {
 					<span className={`line ${menuOpen ? 'line-2' : ''}`}></span>
 					<span className={`line ${menuOpen ? 'line-3' : ''}`}></span>
 				</button>
+				<div className='footer-social-media'>
+					<Link to='https://www.facebook.com/profile.php?id=61564867531134' className='contain-social-btn facebook' target='_blank' style={{textDecoration:'none'}}>
+						<div className='social-btn facebook'>
+							<FaFacebook className='social-btn-icon' />
+						</div>
+						<span className='social-text'>Facebook</span>
+					</Link>
+					<Link to='https://www.linkedin.com/in/leonel-brizio-940223245' className='contain-social-btn linkedin' target='_blank' style={{textDecoration:'none'}}>
+						<div className='social-btn linkedin'>
+							<FaLinkedin className='social-btn-icon' />
+						</div>
+						<span className='social-text'>Linkedin</span>
+					</Link>
+					<Link to='https://github.com/LeoBrizio98?tab=repositories' className='contain-social-btn github' target='_blank' style={{textDecoration:'none'}}>
+						<div className='social-btn github'>
+							<FaGithub className='social-btn-icon' />
+						</div>
+						<span className='social-text'>GitHub</span>
+					</Link>
+				</div>
 			</div>
 		</>
 	);

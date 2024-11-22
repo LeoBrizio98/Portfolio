@@ -2,6 +2,7 @@
 import Layout from '../../hocs/Layout';
 import { Link } from 'react-router-dom';
 import { WhatsAppButton } from '../../components/aditional/WhatsApp';
+import Preloader from '../../components/aditional/Preloader';
 import { useEffect, useState } from 'react';
 //Styles
 import '../../styles/static-pages.css';
@@ -18,10 +19,6 @@ import { BiWorld } from "react-icons/bi";
 const Home = () => {
 
 	const [loaded, setLoaded] = useState(false);
-
-	useEffect(() => {
-		window.scrollTo(0,0)
-	}, []);
 
 	useEffect(() => {
 		window.scrollTo(0,0);
