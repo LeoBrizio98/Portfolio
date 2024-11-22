@@ -15,6 +15,7 @@ import PurchasingPolicies from './containers/policies/PurchasingPolicies';
 import WebDesign from './containers/services/WebDesign';
 import WebDesignDetail from './containers/services/WebDesignDetail';
 import DigitalMarketing from './containers/services/DigitalMarketing';
+import Calculator from './containers/pages/Calculator';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
                     <Route exact path='/about' element={<About />} />
                     <Route exact path='/contact' element={<Contact />} />
                     <Route exact path='/services' element={<Services />} />
+                    <Route exact path='/projects/calculator' element={<Calculator />} />
 
                     {/* Services */}
                     <Route exact path='/services/web-design' element={<WebDesign />} />

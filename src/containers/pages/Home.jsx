@@ -1,9 +1,11 @@
+//React
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { ReactTyped } from 'react-typed';
 //Components
 import Layout from '../../hocs/Layout';
-import { Link } from 'react-router-dom';
 import { WhatsAppButton } from '../../components/aditional/WhatsApp';
 import Preloader from '../../components/aditional/Preloader';
-import { useEffect, useState } from 'react';
 //Styles
 import '../../styles/static-pages.css';
 //Icons
@@ -13,6 +15,7 @@ import { LuPencilRuler } from "react-icons/lu";
 import { BsGraphUpArrow, BsPeopleFill, BsPersonFillSlash } from "react-icons/bs";
 import { IoStorefrontSharp } from "react-icons/io5";
 import { BiWorld } from "react-icons/bi";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
 
 
@@ -36,10 +39,35 @@ const Home = () => {
 			<div className={`container-banner-home content ${loaded ? 'loaded' : ''}`}>
 				<div className='contain-banner-home'>
 					<div className='banner-home-title'>
-						<h2>Tu Portal al</h2>
-						<h2 className='home-title'>Éxito Digital</h2>
+						<h2 className='presentation-title'>Soy <ReactTyped
+		          			strings={['Leonel Brizio', 'Programador', 'Desarrollador', 'Diseñador']}
+		          			typeSpeed={60}
+		          			backSpeed={60}
+		          			className='color-presentation-title'
+		        		/></h2>
 					</div>
 					<p>Confía en nosotros para transformar tu presencia online y sobresalir en el entorno digital</p>
+					<Link to='/menu' className='btn btn2' style={{textDecoration: 'none'}}>Ver Más</Link>
+					<div className='footer-social-media'>
+					<Link to='https://www.facebook.com/profile.php?id=61564867531134' className='contain-social-btn facebook' target='_blank' style={{textDecoration:'none'}}>
+						<div className='social-btn facebook'>
+							<FaFacebook className='social-btn-icon' />
+						</div>
+						<span className='social-text'>Facebook</span>
+					</Link>
+					<Link to='https://www.linkedin.com/in/leonel-brizio-940223245' className='contain-social-btn linkedin' target='_blank' style={{textDecoration:'none'}}>
+						<div className='social-btn linkedin'>
+							<FaLinkedin className='social-btn-icon' />
+						</div>
+						<span className='social-text'>Linkedin</span>
+					</Link>
+					<Link to='https://github.com/LeoBrizio98?tab=repositories' className='contain-social-btn github' target='_blank' style={{textDecoration:'none'}}>
+						<div className='social-btn github'>
+							<FaGithub className='social-btn-icon' />
+						</div>
+						<span className='social-text'>GitHub</span>
+					</Link>
+				</div>
 					<Link to='/services' className='button-home' target='_blank' style={{textDecoration:'none'}}>
 						<div className='button-home-icon'>
 							<FaArrowRightLong />

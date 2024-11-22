@@ -22,6 +22,19 @@
 	--light-blue: #1DA5E8;
 	--nut-color: #D8AB7A;
 	--gold-color: #B0967A;
+  	--background-color: #ffffff;
+  	--text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --background-color: #0F1937;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -30,10 +43,11 @@
 }
 
 .btn {
-	padding: .5rem 1.8rem;
+	padding: 1rem 1.8rem;
 	font-size: 1rem;
 	position: relative;
 	margin: 2rem;
+	text-align: center;
 }
 
 /********************/

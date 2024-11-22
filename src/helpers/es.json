@@ -1,3 +1,8 @@
 {
-	"spanish": "Español"
+	"spanish": "Español",
+	"english": "Inglés",
+	"home": "Inicio",
+	"about": "Sobre Mí",
+	"contact": "Contacto",
+	"projects": "Proyectos"
 }
