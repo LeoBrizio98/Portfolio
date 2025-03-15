@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/components.css';
+import '../../styles/static-pages.css';
 
 
 const ButtonClear = (props) => (

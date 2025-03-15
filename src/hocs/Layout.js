@@ -1,8 +1,6 @@
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../components/navigation/Navbar';
-import Footer from '../components/navigation/Footer';
-import { useEffect } from 'react';
 
 
 const Layout = (props) => {
@@ -12,7 +10,6 @@ const Layout = (props) => {
 			<Navbar />
 			<ToastContainer autoClose={5000} />
 			{props.children}
-			<Footer />
 		</div>
 	);
 };

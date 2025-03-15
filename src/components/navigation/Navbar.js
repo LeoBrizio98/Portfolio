@@ -1,12 +1,11 @@
 //React
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Fragment, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 //Components
 import LanguageSwitcher from '../../components/aditional/LanguageSwitcher';
 //Styles
 import '../../styles/navigation.css';
-import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdOutlineWbSunny, MdNightlight } from "react-icons/md";
 
 
@@ -47,16 +46,16 @@ function Navbar() {
 	return (
 		<>	
 			<div className='container-navbar'>
-				<div className='container-logo'>
-					<Link to='/' style={{textDecoration: 'none'}}><img src={require(`../../images/k-chingblanco.png`)} alt='k-ching-blanco' /></Link>
-				</div>
 				<div className={`container-navlinks navbar ${menuOpen ? 'menu-active' : ''}`}>
-					<NavLink to='/' className={`btn-navbar ${isActive => isActive ? 'active' : ''}`} style={{textDecoration: 'none'}}><span>{t("home")}</span></NavLink>
-					<NavLink to='/about' className='btn-navbar' style={{textDecoration: 'none'}}><span>{t("about")}</span></NavLink>
-					<NavLink to='/services' className='btn-navbar' style={{textDecoration: 'none'}}><span>{t("projects")}</span></NavLink>
-					<NavLink to='/contact' className='btn-navbar' style={{textDecoration: 'none'}}><span>{t("contact")}</span></NavLink>
+					<Link to='/#top' className='btn-navbar' style={{textDecoration: 'none'}}><span>{t("home")}</span></Link>
+					<Link to='/#projects' className='btn-navbar' style={{textDecoration: 'none'}}><span>{t("projects")}</span></Link>
+					<Link to='/#about' className='btn-navbar' style={{textDecoration: 'none'}}><span>{t("about")}</span></Link>
+					<Link to='/#skills' className='btn-navbar' style={{textDecoration: 'none'}}><span>{t("skills")}</span></Link>
+					<Link to='/#contact' className='btn-navbar' style={{textDecoration: 'none'}}><span>{t("contact-2")}</span></Link>
+				</div>
+				<div className='container-switchers'>
 					<LanguageSwitcher />
-					<button className='button-change-theme' onClick={toggleTheme}>{theme === 'light' ? <MdOutlineWbSunny className='icon-change-theme' /> : <MdNightlight className='icon-change-theme' /> }</button>
+					<button className='button-change-theme' onClick={toggleTheme}>{theme === 'light' ? <MdNightlight className='icon-change-theme' /> : <MdOutlineWbSunny className='icon-change-theme' /> }</button>
 				</div>
 				<button className='nav-open-btn' id='menu-toggle' aria-label='Toggle Menu' onClick={toggleMenu}>
 					<span className={`line ${menuOpen ? 'line-1' : ''}`}></span>
